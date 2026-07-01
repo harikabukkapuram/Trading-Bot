@@ -1,0 +1,177 @@
+Absolutely! Running a variety of commands is a great way to verify your bot and generate richer log files for your submission.
+
+## 1. MARKET BUY (Already tested)
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+```
+
+Expected:
+
+* Success
+* Order Status
+* Order ID
+
+---
+
+## 2. MARKET SELL
+
+```bash
+python cli.py --symbol BTCUSDT --side SELL --type MARKET --quantity 0.001
+```
+
+Tests:
+
+* SELL
+* MARKET
+
+---
+
+## 3. LIMIT BUY
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.001 --price 100000
+```
+
+Tests:
+
+* BUY
+* LIMIT
+
+---
+
+## 4. LIMIT SELL (Already tested)
+
+```bash
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 120000
+```
+
+---
+
+# Validation Tests
+
+These help demonstrate your input validation and error handling.
+
+## 5. Invalid Side
+
+```bash
+python cli.py --symbol BTCUSDT --side HOLD --type MARKET --quantity 0.001
+```
+
+Expected:
+
+```
+Validation Error: Side must be BUY or SELL.
+```
+
+---
+
+## 6. Invalid Order Type
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type STOP --quantity 0.001
+```
+
+Expected:
+
+```
+Validation Error: Order type must be MARKET or LIMIT.
+```
+
+---
+
+## 7. Missing Price for LIMIT
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.001
+```
+
+Expected:
+
+```
+--price is required for LIMIT orders.
+```
+
+---
+
+## 8. Invalid Quantity
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity -1
+```
+
+Expected:
+
+```
+Validation Error: Quantity must be greater than zero.
+```
+
+---
+
+## 9. Invalid Symbol
+
+```bash
+python cli.py --symbol ABC --side BUY --type MARKET --quantity 0.001
+```
+
+Expected:
+
+```
+Validation Error
+```
+
+or a Binance API error if the symbol passes your basic validation but isn't a valid trading pair.
+
+---
+
+## 10. Non-numeric Quantity
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity abc
+```
+
+Expected:
+
+```
+argument --quantity: invalid float value: 'abc'
+```
+
+---
+
+## 11. Invalid Price
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type LIMIT --quantity 0.001 --price -100
+```
+
+Expected:
+
+```
+Validation Error: Price must be greater than zero.
+```
+
+---
+
+# Optional Test
+
+If you have enough test funds in your Futures Testnet account:
+
+```bash
+python cli.py --symbol ETHUSDT --side BUY --type MARKET --quantity 0.01
+```
+
+---
+
+# Recommended Log Set
+
+For your submission, I recommend including logs from at least:
+
+1. MARKET BUY
+2. MARKET SELL
+3. LIMIT BUY
+4. LIMIT SELL
+5. One validation error (e.g., missing `--price` for a LIMIT order)
+
+This demonstrates not only that your bot can place orders, but also that it handles invalid input gracefully, which is one of the evaluation criteria.
+
+Good luck with your application!

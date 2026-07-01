@@ -1,0 +1,27 @@
+2026-07-01 11:13:19 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:13:19 | INFO | Submitting MARKET order for BTCUSDT
+2026-07-01 11:13:19 | INFO | MARKET ORDER | BTCUSDT | BUY | Qty=0.001
+2026-07-01 11:13:20 | ERROR | Invalid API-key, IP, or permissions for action
+2026-07-01 11:13:44 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:13:44 | INFO | Submitting LIMIT order for BTCUSDT
+2026-07-01 11:13:44 | INFO | LIMIT ORDER | BTCUSDT | SELL | Qty=0.001 | Price=120000.0
+2026-07-01 11:13:45 | ERROR | Invalid API-key, IP, or permissions for action
+2026-07-01 11:23:13 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:23:13 | INFO | Submitting MARKET order for BTCUSDT
+2026-07-01 11:23:13 | INFO | MARKET ORDER | BTCUSDT | BUY | Qty=0.001
+2026-07-01 11:23:13 | INFO | {'orderId': 18166033587, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJb93598f612f5440959b744', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782885195622}
+2026-07-01 11:23:13 | INFO | Order Successful | ID=18166033587 | Status=NEW
+2026-07-01 11:24:17 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:24:17 | INFO | Submitting LIMIT order for BTCUSDT
+2026-07-01 11:24:17 | INFO | LIMIT ORDER | BTCUSDT | SELL | Qty=0.001 | Price=120000.0
+2026-07-01 11:24:18 | INFO | {'orderId': 18166207595, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJc52acb8aa1b8f0728f5322', 'price': '120000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782885259972}
+2026-07-01 11:24:18 | INFO | Order Successful | ID=18166207595 | Status=NEW
+2026-07-01 11:26:03 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:26:03 | INFO | Submitting MARKET order for BTCUSDT
+2026-07-01 11:26:03 | INFO | MARKET ORDER | BTCUSDT | SELL | Qty=0.001
+2026-07-01 11:26:04 | INFO | {'orderId': 18166493956, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ992f2a6e93ca79bbddfe33', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782885366416}
+2026-07-01 11:26:04 | INFO | Order Successful | ID=18166493956 | Status=NEW
+2026-07-01 11:26:08 | INFO | Connected to Binance Futures Testnet.
+2026-07-01 11:26:08 | INFO | Submitting LIMIT order for BTCUSDT
+2026-07-01 11:26:08 | INFO | LIMIT ORDER | BTCUSDT | BUY | Qty=0.001 | Price=100000.0
+2026-07-01 11:26:09 | ERROR | Limit price can't be higher than 62069.27.
